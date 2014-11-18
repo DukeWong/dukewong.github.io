@@ -2,7 +2,7 @@
 
 title:            :-X archcodev - 如果编程语言是汽车
 locale:           zh_CN
-url:              http://archcodev.com
+url:              http://dukewong.github.io/
 
 
 # Jekyll configuration
@@ -30,7 +30,7 @@ owner:
   avatar: bio-photo.jpg
   bio: "Programming Is A Labor Of Love."
   email: bdw2job@hotmail.com
-  disqus-shortname: 
+  disqus-shortname: archcodev
   twitter: #username
   facebook: #username
   google:
