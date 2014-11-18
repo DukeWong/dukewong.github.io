@@ -6,7 +6,7 @@ excerpt: "Instructions on how to install and customize the Jekyll theme Minimal 
 image:
   feature: sample-image-3.jpg
   credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  creditlink: http://www.samsung-wallpapers.com
 ---
 
 <section id="table-of-contents" class="toc">
