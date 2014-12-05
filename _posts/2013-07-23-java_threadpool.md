@@ -35,7 +35,7 @@ Executors.newFixedThreadPool(xxxx,xxxx,....).execute(Runnable r);
 	<a href="/images/2013/07/04_0.jpg"><img src="/images/2013/07/04.jpg"></a>
 </figure>
 
- 总结一下：ThreadPoolExecutor主要是传入一个runable的方法，然后内部构建一个Queue把runable方法存入，等到可执行的时候就通过ThreadFactory方法new一个Thread存入hashset，并且执行run方法。
+总结一下：ThreadPoolExecutor主要是传入一个runable的方法，然后内部构建一个Queue把runable方法存入，等到可执行的时候就通过ThreadFactory方法new一个Thread存入hashset，并且执行run方法。
 
 关于LinkedBlockingQueue<E>，本人稍微看了下，虽然是Queue，可是内部却是一个Node<E>的链表，并且内部有两个ReentrantLock，这个拓展开来就太多了，下次再说吧。
 
@@ -45,7 +45,8 @@ Executors.newFixedThreadPool(xxxx,xxxx,....).execute(Runnable r);
 
 ReentrantLock中Condition的用法示例
 
-   作为一个示例，假定有一个绑定的缓冲区，它支持 put 和 take 方法。如果试图在空的缓冲区上执行 take 操作，则在某一个项变得可用之前，线程将一直阻塞；如果试图在满的缓冲区上执行 put 操作，则在有空间变得可用之前，线程将一直阻塞。我们喜欢在单独的等待 set 中保存 put 线程和 take 线程，这样就可以在缓冲区中的项或空间变得可用时利用最佳规划，一次只通知一个线程。可以使用两个 Condition 实例来做到这一点。[^2] 
+
+作为一个示例，假定有一个绑定的缓冲区，它支持 put 和 take 方法。如果试图在空的缓冲区上执行 take 操作，则在某一个项变得可用之前，线程将一直阻塞；如果试图在满的缓冲区上执行 put 操作，则在有空间变得可用之前，线程将一直阻塞。我们喜欢在单独的等待 set 中保存 put 线程和 take 线程，这样就可以在缓冲区中的项或空间变得可用时利用最佳规划，一次只通知一个线程。可以使用两个 Condition 实例来做到这一点。[^2] 
 {% highlight java %}
    class BoundedBuffer {
    final Lock lock = new ReentrantLock();
