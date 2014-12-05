@@ -37,7 +37,7 @@ Executors.newFixedThreadPool(xxxx,xxxx,....).execute(Runnable r);
 
  总结一下：ThreadPoolExecutor主要是传入一个runable的方法，然后内部构建一个Queue把runable方法存入，等到可执行的时候就通过ThreadFactory方法new一个Thread存入hashset，并且执行run方法。
 
-    关于LinkedBlockingQueue<E>，本人稍微看了下，虽然是Queue，可是内部却是一个Node<E>的链表，并且内部有两个ReentrantLock，这个拓展开来就太多了，下次再说吧。
+关于LinkedBlockingQueue<E>，本人稍微看了下，虽然是Queue，可是内部却是一个Node<E>的链表，并且内部有两个ReentrantLock，这个拓展开来就太多了，下次再说吧。
 
 另外提下volatile关键字，他使得多线程同步灵活，同时也不会阻塞方法，执行更加高效，可是灵活性太高，用起来难度比较大。
 
