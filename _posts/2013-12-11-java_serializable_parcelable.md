@@ -13,6 +13,7 @@ date: 2013-12-11T20:02:12+08:00
 #####Base on java 1.6
 
 关于Serializable，引用别人的博客，个人觉得言简意赅[^1][^2]
+
 ####Object serialization的定义：
 Object serialization 允许你将实现了Serializable接口的对象转换为字节序列，这些字节序列可以被完全存储以备以后重新生成原来的对象。  
 serialization不但可以在本机做，而且可以经由网络操作（就是RMI）。这个好处是很大的——因为它自动屏蔽了操作系统 的差异，字节顺序（用Unix下的c开发过网络编程的人应该知道这个概念，我就容易在这上面犯错）等。比如，在Window平台生成一个对象并序列化之， 然后通过网络传到一台Unix机器上，然后可以在这台Unix机器上正确地重构这个对象。 
@@ -75,8 +76,8 @@ Pool的使用在开发中还是比较频繁的，他主要是限制池中的数�
 
 Java层的代码不多，现在总结下他们的区别：
 
-Serializable的作用是为了保存对象的属性到本地文件、数据库、网络流、rmi以方便数据传输，当然这种传输可以是程序内的也可以是两个程序间的。
-Android的Parcelable的设计初衷是因为Serializable效率过慢，为了在程序内不同组件间以及不同Android程序间(AIDL)高效的传输数据而设计，这些数据仅在内存中存在，Parcelable是通过IBinder通信的消息的载体。
+* Serializable的作用是为了保存对象的属性到本地文件、数据库、网络流、rmi以方便数据传输，当然这种传输可以是程序内的也可以是两个程序间的。
+* Android的Parcelable的设计初衷是因为Serializable效率过慢，为了在程序内不同组件间以及不同Android程序间(AIDL)高效的传输数据而设计，这些数据仅在内存中存在，Parcelable是通过IBinder通信的消息的载体。
 
 ##疑问
 C和C++层的还有待跟进
