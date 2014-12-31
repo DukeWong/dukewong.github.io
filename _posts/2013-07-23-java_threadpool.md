@@ -76,6 +76,8 @@ AbstractQueuedSynchronizer、volatile[^1]的用法
 
 #####To be Continue…
 
+原创文章，转载请注明： 转载自 <a href="http://archcodev.com">:-X archcodev</a>
+
 ###参考
 [^1]: <http://www.ibm.com/developerworks/cn/java/j-jtp06197.html>
 [^2]: <http://longdick.iteye.com/blog/453615>

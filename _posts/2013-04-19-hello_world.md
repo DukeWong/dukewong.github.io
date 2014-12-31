@@ -19,3 +19,5 @@ public Log(Class clazz, boolean debugOn) {
 		System.out.println("Hello, World !!");
 	}
 {% endhighlight %}
+
+原创文章，转载请注明： 转载自 <a href="http://archcodev.com">:-X archcodev</a>

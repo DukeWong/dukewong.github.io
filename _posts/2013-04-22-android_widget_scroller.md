@@ -50,6 +50,8 @@ startAnimation与scrollTo是否有间接联系？
 
 #####To be Continue…
 
+原创文章，转载请注明： 转载自 <a href="http://archcodev.com">:-X archcodev</a>
+
 ###参考
 [^1]: <http://blog.csdn.net/zhouyuanjing/article/details/8290454>
 [^2]: <http://blog.csdn.net/qinjuning/article/details/7247126>

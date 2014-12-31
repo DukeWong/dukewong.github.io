@@ -99,6 +99,8 @@ Android 3.0为了适配平板加入了Fragement的概念，下面以MessageListF
 
 #####To be Continue…
 
+原创文章，转载请注明： 转载自 <a href="http://archcodev.com">:-X archcodev</a>
+
 ###参考
 [^1]: <http://www.cnblogs.com/CrazyWill/archive/2006/07/03/441795.html>
 [^2]: <http://blog.sina.com.cn/s/blog_5d6ee3360100r1my.html>

@@ -104,5 +104,7 @@ ViewGroup其实最后都会调用到child view的Draw方法。
 
 #####To be Continue…
 
+原创文章，转载请注明： 转载自 <a href="http://archcodev.com">:-X archcodev</a>
+
 ###参考
 [^1]: <http://blog.csdn.net/luoshengyang/article/details/8661317>

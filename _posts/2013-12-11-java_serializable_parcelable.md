@@ -84,6 +84,8 @@ C和C++层的还有待跟进
 
 #####To be Continue…
 
+原创文章，转载请注明： 转载自 <a href="http://archcodev.com">:-X archcodev</a>
+
 ###参考
 [^1]: <http://www.verydemo.com/demo_c89_i37341.html>
 [^2]: <http://www.chinaunix.net/old_jh/26/395684.htm>

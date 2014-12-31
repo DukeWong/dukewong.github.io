@@ -26,6 +26,8 @@ ArrayDeque通过一个数组作为载体，其中的数组元素在add等方法�
 
 #####To be Continue…
 
+原创文章，转载请注明： 转载自 <a href="http://archcodev.com">:-X archcodev</a>
+
 ###参考
 [^1]: <http://blog.csdn.net/zlb824/article/details/7091814>
 [^2]: <http://blog.csdn.net/microsoftq/article/details/5737514>
