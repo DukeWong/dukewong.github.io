@@ -301,4 +301,4 @@ public static void main(String argv[]) {
 
 ###参考
 [^1]: <http://blog.csdn.net/luoshengyang/article/details/8914953>
-[^2]: <http://longdick.iteye.com/blog/453615>
+[^2]: <http://www.zhihu.com/question/20207106>
