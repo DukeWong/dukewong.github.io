@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "dalvik虚拟机与zygote"
+title: "dalvik虚拟机与zygote && M0.3"
 modified:
 categories: 
 excerpt: "从app_process开始说起"
@@ -13,7 +13,7 @@ date: 2015-02-10T00:021:56+08:00
 
 既然学了cpp，就从c++的角度重新看看android吧。
 
-这次说说android系统的启动以及app的启动，同时阐述这段时间各层都发生了什么，先看看adb信息
+这次说说android系统的启动以及app的启动，同时阐述这段时间各层都发生了什么，先看看调试信息
 <figure>
 	<a href="/images/2015/02/01.png"><img src="/images/2015/02/01.png"></a>
 </figure>
@@ -295,6 +295,7 @@ public static void main(String argv[]) {
 	<a href="/images/2015/02/05.png"><img src="/images/2015/02/05.png"></a>
 </figure>
 
+#####To be Continue…
 
 原创文章，转载请注明： 转载自 <a href="http://archcodev.com">:-X archcodev</a>
 
