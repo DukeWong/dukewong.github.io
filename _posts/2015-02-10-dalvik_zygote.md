@@ -10,9 +10,7 @@ image:
 date: 2015-02-10T00:021:56+08:00
 ---
 沉寂了一年，可以说这一年经历了很多，想了想还是把旧网站的一部分博客转了过来，同时也开始了学习cpp的道路。
-
 既然学了cpp，就从c++的角度重新看看android吧。
-
 这次说说android系统的启动以及app的启动，同时阐述这段时间各层都发生了什么，先看看调试信息
 <figure>
 	<a href="/images/2015/02/01.png"><img src="/images/2015/02/01.png"></a>
@@ -219,7 +217,6 @@ bail:
 {% endhighlight %}
         
 这个函数的作用是启动Android系统运行时库，它主要做了三件事情，一是调用函数startVM启动虚拟机，二是调用函数startReg注册JNI方法，三是调用了com.android.internal.os.ZygoteInit类的main函数。[^1]
-
 然后ZygoteInit启动了
 
 {% highlight java %}
@@ -286,7 +283,6 @@ public static void main(String argv[]) {
 </figure>
 
 所以说，Dalvik虚拟机的Zygote并不是提供一个运行时容器，它提供的只是一个用于共享的进程，所有的应用程序运行，都是独立的，OS级别的进程，直接受到OS层面的资源控制以及调度的影响，只是他们共享Zygote说预加载的类而已。这也就是我为什么说，Dalvik就像是给每个应用程序在底层加了个套子，应该属于进程虚拟。[^2]
-
 当一个app启动起来的流程应该是下面这样的
 <figure>
 	<a href="/images/2015/02/04.png"><img src="/images/2015/02/04.png"></a>
