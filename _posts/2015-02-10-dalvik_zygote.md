@@ -20,7 +20,7 @@ date: 2015-02-10T00:021:56+08:00
 
 首先是系统启动脚本system/core/rootdir/init.rc文件中
 
-{% highlight java %}
+{% highlight c++ %}
 service zygote /system/bin/app_process -Xzygote /system/bin --zygote --start-system-server
     socket zygote stream 666
     onrestart write /sys/android_power/request_state wake
@@ -31,7 +31,7 @@ service zygote /system/bin/app_process -Xzygote /system/bin --zygote --start-sys
 
 接着就转到frameworks/base/cmds/app_process/app_main.cpp的main函数
 
-{% highlight java %}
+{% highlight c++ %}
 int main(int argc, const char* const argv[])
 {
     // These are global variables in ProcessState.cpp
