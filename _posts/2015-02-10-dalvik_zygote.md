@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "dalvik虚拟机与zygote && M0.7"
+title: "dalvik虚拟机与zygote && M0.0.7"
 modified:
 categories: 
 excerpt: "从app_process开始说起"
