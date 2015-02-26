@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "dalvik虚拟机与zygote && M0.3"
+title: "dalvik虚拟机与zygote && M0.7"
 modified:
 categories: 
 excerpt: "从app_process开始说起"
@@ -9,6 +9,8 @@ image:
   feature:
 date: 2015-02-10T00:021:56+08:00
 ---
+#####Base On Android 2.3.7
+
 沉寂了一年，可以说这一年经历了很多，想了想还是把旧网站的一部分博客转了过来，同时也开始了学习cpp的道路。
 
 既然学了cpp，就从c++的角度重新看看android吧。
@@ -284,8 +286,25 @@ public static void main(String argv[]) {
 <figure>
 	<a href="/images/2015/02/03.png"><img src="/images/2015/02/03.png"></a>
 </figure>
+ActivityManagerService管理android应用创建的新进程。ActivityManagerService启动新的进程是从其成员函数startProcessLocked开始.
+ActivityManagerService.startProcessLocked定义在/frameworks/base/services/java/com/android/server/am/ActivityManagerService.java
+{% highlight java %}
+...
+ int pid = Process.start("android.app.ActivityThread",
+                    mSimpleProcessManagement ? app.processName : null, uid, uid,
+                    gids, debugFlags, null);
+...
+{% endhighlight %}
 
-所以说，Dalvik虚拟机的Zygote并不是提供一个运行时容器，它提供的只是一个用于共享的进程，所有的应用程序运行，都是独立的，OS级别的进程，直接受到OS层面的资源控制以及调度的影响，只是他们共享Zygote说预加载的类而已。这也就是我为什么说，Dalvik就像是给每个应用程序在底层加了个套子，应该属于进程虚拟。[^2]
+process.start()根据是否支持多进程会通过zygote调用到RuntimeInit.invokeStaticMain()或者是直接调用process.invokeStaticMain(),走到调用ActivityThread.main()函数，这样一个app就启动起来了。[^2]
+{% highlight java %}
+...
+cl.getMethod("main", new Class[] { String[].class })
+                    .invoke(null, args);            
+...
+{% endhighlight %}
+
+补充一点，Dalvik虚拟机的Zygote并不是提供一个运行时容器，它提供的只是一个用于共享的进程，所有的应用程序运行，都是独立的，OS级别的进程，直接受到OS层面的资源控制以及调度的影响，只是他们共享Zygote说预加载的类而已。这也就是我为什么说，Dalvik就像是给每个应用程序在底层加了个套子，应该属于进程虚拟。[^3]
 
 当一个app启动起来的流程应该是下面这样的
 <figure>
@@ -301,4 +320,5 @@ public static void main(String argv[]) {
 
 ###参考
 [^1]: <http://blog.csdn.net/luoshengyang/article/details/8914953>
-[^2]: <http://www.zhihu.com/question/20207106>
+[^2]: <http://www.cnblogs.com/coding-hundredOfYears/archive/2012/10/28/2742026.html>
+[^3]: <http://www.zhihu.com/question/20207106>
