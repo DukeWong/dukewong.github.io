@@ -19,16 +19,6 @@ date: 2015-03-01T00:021:20+08:00
 	<a href="/images/2015/03/01.png"><img src="/images/2015/03/01.png"></a>
 </figure>
 
-小结：
-* 蓝色的代表进程。
-* 当一个app启动的时候，是由ActivityManagerService通知zygoteInit进程，然后fork一个zygote进程，启动activity的[^1] [^2]。 
-* java层的New Thread操作最终会进过jni转化成linux pthread_create操作，底层的创建线程也是通过pthread的。
-* linux没有线程的概念，线程算作精简的进程
-* dvm限制单个app的heap空间
-* activity和thread、process不是一个范畴的东西，他是android大牛发明的概念
-* Activity task是一类操作的集合，和thread也没关系，相类比的概念有activityStack，activityRecord等等。[^3]。
-* looper是anroid大牛在java层想到的线程间通信的方法，和linux层面的不同，linux层面是通过static或者传参共享的。[^4]
-
 
 * 蓝色的代表进程
 
