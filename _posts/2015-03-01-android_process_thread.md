@@ -41,6 +41,7 @@ date: 2015-03-01T00:021:20+08:00
 
 ###疑问
 service与activity不同在哪里？又和thread如何区分？
+解答：activity service application都继承context，本质差不多。
 
 #####To be Continue…
 
