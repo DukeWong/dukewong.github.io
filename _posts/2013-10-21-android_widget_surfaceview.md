@@ -46,7 +46,7 @@ private final class FrameHandler extends Handler {
     } 
 {% endhighlight %}
 
-最后到了SurfaceView中的onPreDraw->updateWindow->surfaceCreated。至此，SurfaceView启动了后面的应该就很明了了，一般会在里面create一个loop方法，然后用canvas绘图。
+最后到了SurfaceView中的onPreDraw->updateWindow->surfaceCreated。至此，SurfaceView启动了后面的应该就很明了了，一般用户会在里面create一个loop方法，然后用canvas绘图。
 
 到此为止，启动的过程已经有个了解了，可是似乎有种几乎什么都没有发现的感觉。
 
