@@ -50,7 +50,7 @@ private final class FrameHandler extends Handler {
 
 到此为止，启动的过程已经有个了解了，可是似乎有种几乎什么都没有发现的感觉。
 
-* 1、为何surfaceView可以不在主线程UI绘图？还是不明白，而且脑中有几个疑问，一直没有得到解决。
+* 1、(错误，待删除)为何surfaceView可以不在主线程UI绘图？还是不明白，而且脑中有几个疑问，一直没有得到解决。
 * 2、普通的widget（如TextView等）创建过程它他有何不同？
 * 3、window窗口在刷新这两种widget时是否分开刷新？
 * 4、他的帧率又是如何控制的？
