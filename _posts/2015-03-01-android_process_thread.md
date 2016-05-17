@@ -9,7 +9,7 @@ image:
   feature:
 date: 2015-03-01T00:021:20+08:00
 ---
-#####Base On Android 4.0
+##### Base On Android 4.0
 
 去年8月份开始研究android 的C++层面，为了看懂avm，还去翻了hotspot相关的知识，随后再是dalvik，再到后面的计算机系统概念，随后解决刚入行时对android的进程线程的疑问。
 
@@ -39,15 +39,15 @@ date: 2015-03-01T00:021:20+08:00
 
 总之，归纳这些概念，整整花了2天，一两句也说不清楚，要理解这些还真得自己的参透。
 
-###疑问
+### 疑问
 service与activity不同在哪里？又和thread如何区分？
 解答：activity service application都继承context，本质差不多。
 
-#####To be Continue…
+##### To be Continue…
 
 原创文章，转载请注明： 转载自 <a href="http://archcodev.com">:-X archcodev</a>
 
-###参考
+### 参考
 [^1]: <http://blog.csdn.net/luoshengyang/article/details/6689748>
 [^2]: <http://blog.csdn.net/luoshengyang/article/details/8923484>
 [^3]: <http://blog.csdn.net/qinjuning/article/details/7262769>

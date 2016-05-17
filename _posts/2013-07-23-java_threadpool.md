@@ -10,7 +10,7 @@ image:
   feature:
 date: 2013-07-23T20:02:12+08:00
 ---
-#####Base on java 1.6
+##### Base on java 1.6
 
 Pool的使用在开发中还是比较频繁的，他主要是限制池中的数量和提高复用的性能。下面以ThreadPoolExecutor为例子，看看到底内部的实现，先看代码
 {% highlight java %}
@@ -41,7 +41,7 @@ Executors.newFixedThreadPool(xxxx,xxxx,....).execute(Runnable r);
 
 另外提下volatile关键字，他使得多线程同步灵活，同时也不会阻塞方法，执行更加高效，可是灵活性太高，用起来难度比较大。
 
-###拓展
+### 拓展
 
 ReentrantLock中Condition的用法示例
 
@@ -71,13 +71,13 @@ ReentrantLock中Condition的用法示例
    }
 {% endhighlight %}
 
-###疑问
+### 疑问
 AbstractQueuedSynchronizer、volatile[^1]的用法
 
-#####To be Continue…
+##### To be Continue…
 
 原创文章，转载请注明： 转载自 <a href="http://archcodev.com">:-X archcodev</a>
 
-###参考
+### 参考
 [^1]: <http://www.ibm.com/developerworks/cn/java/j-jtp06197.html>
 [^2]: <http://longdick.iteye.com/blog/453615>

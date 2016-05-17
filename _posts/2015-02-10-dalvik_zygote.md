@@ -9,7 +9,7 @@ image:
   feature:
 date: 2015-02-10T00:021:56+08:00
 ---
-#####Base On Android 2.3.7
+##### Base On Android 2.3.7
 
 沉寂了一年，可以说这一年经历了很多，想了想还是把旧网站的一部分博客转了过来，同时也开始了学习cpp的道路。
 
@@ -314,11 +314,11 @@ cl.getMethod("main", new Class[] { String[].class })
 	<a href="/images/2015/02/05.png"><img src="/images/2015/02/05.png"></a>
 </figure>
 
-#####To be Continue…
+##### To be Continue…
 
 原创文章，转载请注明： 转载自 <a href="http://archcodev.com">:-X archcodev</a>
 
-###参考
+### 参考
 [^1]: <http://blog.csdn.net/luoshengyang/article/details/8914953>
 [^2]: <http://www.cnblogs.com/coding-hundredOfYears/archive/2012/10/28/2742026.html>
 [^3]: <http://www.zhihu.com/question/20207106>

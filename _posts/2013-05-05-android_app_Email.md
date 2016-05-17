@@ -10,7 +10,7 @@ image:
   feature:
 date: 2013-05-05T12:23:02+08:00
 ---
-#####Base On Android 4.2.1
+##### Base On Android 4.2.1
 
  刚入职那会儿就干着email的移植啊，bug啊之类的，索性写下点什么，以后翻起来也方便点，以下不保证正确性，仅供 娱乐参考。 Email的概念层次图，可以对Email有个宏观的了解（pop端口一般是995，而smtp一般是465）[^1]。
 <figure>
@@ -94,13 +94,13 @@ Android 3.0为了适配平板加入了Fragement的概念，下面以MessageListF
 
 在此，关注一个接口回掉的方法，下面是类图，简单解释下，当点击onclick（）的时候调用回掉接口中定义的内容，其中 getTargetFragment（）的用法比较有趣，和setTargetFragment（）搭配使用。关于callback的使用最早接触是在C 中了解到了，他定义了一个接口模板，然后通过内嵌的方式突破权限的限制，使得Class A可以调用Class B的方法，同时能拆开Class AB的耦合，一举两得，不能在google工作也就只能拜读他们的代码咯。
 
-###疑问
+### 疑问
 在有网络时，是否也每次都是从数据库中取数据，换句话说就是先得从网络把数据存储到sqlite，然后再从db中取出显示？
 
-#####To be Continue…
+##### To be Continue…
 
 原创文章，转载请注明： 转载自 <a href="http://archcodev.com">:-X archcodev</a>
 
-###参考
+### 参考
 [^1]: <http://www.cnblogs.com/CrazyWill/archive/2006/07/03/441795.html>
 [^2]: <http://blog.sina.com.cn/s/blog_5d6ee3360100r1my.html>

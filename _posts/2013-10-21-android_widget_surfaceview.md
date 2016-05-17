@@ -10,7 +10,7 @@ image:
   feature:
 date: 2013-10-21T19:18:02+08:00
 ---
-#####Base On Android 4.2.1
+##### Base On Android 4.2.1
 
 近日开始研究SurfaceView，对于它为何能够在非UI线程更新动画而不报CalledFromWrongThreadException错（android.view.ViewRoot$CalledFromWrongThreadException: Only the original thread that created a view hierarchy can touch its views）产生了兴趣，所以就深入看下为何如此。
 
@@ -63,13 +63,13 @@ private final class FrameHandler extends Handler {
 
 对于图需要解释下，其中黑色部分是公共的部分，而各种颜色的部分是单独的部分，把他们画在一起是为了做比较。
 
-####1、对于View
+#### 1、对于View
 view在创建和更新的时候都是最终调用到canvas的drawXXX方法。需要说明的是performTraversals（）会被周期性的调用（具体可以参看scheduleTraversals()），然后view在创建的时候就会调用到view的draw方法。而invalidate（）方法会触发performTraversals（）。
 
-####2、对于ViewGroup
+#### 2、对于ViewGroup
 ViewGroup其实最后都会调用到child view的Draw方法。
 
-####3、对于SurfaceView
+#### 3、对于SurfaceView
 里面有个ViewTreeObserver接口，最后会回调到updateWindow方法。对于ViewTreeObserver，从字面意思上看是一个观察者，仔细看看是一个类，里面绑定了相关的interface（OnPreDrawListeners），然后实现onPreDraw（）的回调。这里还有个问题，observer直接调用的是一个group（本质上是ArrayList）里面的onPreDraw方法，具体代码如下
 {% highlight java %}
 ....
@@ -99,12 +99,12 @@ ViewGroup其实最后都会调用到child view的Draw方法。
 
 * 4、帧率控制有个FrameHandler，在Choreographer中。
 
-###疑问
+### 疑问
  为何scheduleTraversals不是线程安全？
 
-#####To be Continue…
+##### To be Continue…
 
 原创文章，转载请注明： 转载自 <a href="http://archcodev.com">:-X archcodev</a>
 
-###参考
+### 参考
 [^1]: <http://blog.csdn.net/luoshengyang/article/details/8661317>

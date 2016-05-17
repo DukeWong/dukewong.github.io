@@ -9,7 +9,7 @@ image:
   feature:
 date: 2015-04-13T00:001:56+08:00
 ---
-#####Base On cocos2d-x-2.2.5
+##### Base On cocos2d-x-2.2.5
 
 花了2个月，终于弄了个游戏demo出来，引擎果然牛逼
 
@@ -35,6 +35,6 @@ date: 2015-04-13T00:001:56+08:00
 
 [下载地址](http://archcodev.com/attachment/PokerMan.apk)
 
-#####To be Continue…
+##### To be Continue…
 
 原创文章，转载请注明： 转载自 <a href="http://archcodev.com">:-X archcodev</a>
