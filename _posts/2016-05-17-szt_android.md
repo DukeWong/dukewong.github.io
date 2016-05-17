@@ -1,17 +1,17 @@
-﻿---
+---
 layout: post
-title: "深圳通查询 && M0.0.1"
+title: "深圳通查询余额 && M0.1.0"
 modified:
 categories: 
-excerpt: "查深圳通余额还是不错的"
+excerpt: "妈妈不用担心我深圳通余额不足了"
 tags: [android, Material]
 image:
   feature:
-date: 2016-05-17T00:001:56+08:00
+date: 2016-05-11T00:001:56+08:00
 ---
-#####Base On cocos2d-x-2.2.5
+#####Base On android > 4.x
 
-查询深圳通余额，Material Design.
+花了6个小时，终于弄了深圳通查询余额小工具，赞！
 
 <figure>
 	<a href="/images/2016/05/01.png"><img src="/images/2016/05/01.png"></a>
@@ -20,7 +20,6 @@ date: 2016-05-17T00:001:56+08:00
 <figure>
 	<a href="/images/2016/05/02.png"><img src="/images/2016/05/02.png"></a>
 </figure>
-
 
 [下载地址](http://archcodev.com/attachment/szt.apk)
 
