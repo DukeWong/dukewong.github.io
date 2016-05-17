@@ -9,7 +9,7 @@ image:
   feature:
 date: 2016-05-11T00:001:56+08:00
 ---
-###Base On android > 4.x
+##### Base On android > 4.x
 
 花了6个小时，终于弄了深圳通查询余额小工具，赞！
 
@@ -23,6 +23,6 @@ date: 2016-05-11T00:001:56+08:00
 
 [下载地址](http://archcodev.com/attachment/szt.apk)
 
-#####To be Continue…
+##### To be Continue…
 
 原创文章，转载请注明： 转载自 <a href="http://archcodev.com">:-X archcodev</a>
