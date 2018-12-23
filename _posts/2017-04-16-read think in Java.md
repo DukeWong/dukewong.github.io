@@ -9,13 +9,12 @@ image:
   feature:
 date: 2017-04-20T00:001:56+08:00
 ---
-#####
 
 
 <figure>
 	<a href="/images/2017/04/01.png"><img src="/images/2017/04/01.png"></a>
 </figure>
 
-#####To be Continue…
+##### To be Continue…
 
 原创文章，转载请注明： 转载自 <a href="http://archcodev.com">:-X archcodev</a>
